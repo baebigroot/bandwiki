@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# banwiki
-=======
-# bandwiki
->>>>>>> c25936d (Initial commit)
+bandwiki
+
 A web project for learning HTML, CSS and basic Js
