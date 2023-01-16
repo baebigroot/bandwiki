@@ -1,0 +1,121 @@
+/* Lovanomena RAFIDISON */
+
+/**************/
+/* Styles-alt */ 
+/**************/
+
+/***********/
+/* GENERAL */ 
+/***********/
+
+body{
+    background-color: #D1D3DC;
+}
+
+
+h1,h2,td,.name,.value,ol,section p{
+    color: aliceblue;
+}
+
+h1:first-letter,.letter{
+     color: #900C3F;
+}
+
+.ref a{
+    opacity: 0.7;
+    color:  #E8E2FC;
+}
+
+.ref a:hover{
+    color:palevioletred ;
+    border-bottom: 2px solid gold;
+    text-decoration: none;
+}
+
+/* Bouton deroulant et bouton de menu au survol et focus  */
+.dropbtn:hover, .dropbtn:focus, .btn:hover {
+    background-color: #CD96BD;
+}
+
+nav {
+     background-color: #581845;
+}
+
+nav li a{
+    color: white;
+}
+
+nav li a:hover{
+    box-shadow: inset 5em 2em #ac8f8f;
+    padding: 2px;
+    color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: lightseagreen;
+}
+
+
+/***********/
+/*  INDEX  */ 
+/***********/
+
+
+section{
+    background-color: #0f1125; 
+    box-shadow: -2px -5px 3px rgba(159, 172, 187, .8);;
+
+}
+
+section a{
+    -webkit-text-stroke: 2px aliceblue;
+}
+
+section a:hover{
+    -webkit-text-stroke: 3px #e5958e ;
+}
+
+.button{
+    background-color: white;
+}
+
+.button:hover {
+    color: blue;
+}
+
+
+
+/**************/
+/* COLLECTION */
+/**************/
+
+
+.ref,ol+li,.comment,.wrapper {
+    background-color: #0f1125 ;
+}
+
+#members, #disc, #refs, #coms {
+	background-color: #440a23 ; 
+}
+
+
+#albums,#singles,.cell:nth-child(odd) {
+	background-color:  #ac8f8f ;
+}
+
+table:hover.mb 
+{
+    outline: 8px ridge rgba(150, 13, 135, 0.8);
+    box-shadow: 12px 12px 2px 1px rgba(160, 172, 190, 0.4);
+}
+
+table.mb,.form_style {
+    background-color: #D1D3DC  ;
+}
+
+td,.label,.note{
+    color: black;
+}
+
+
+

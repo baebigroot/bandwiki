@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE musical_band SYSTEM "musical_band.dtd">
+
+<musical_band author="NGUYEN Nhung" year="2022">
+    <cover>
+        <group_name> Imagine Dragons </group_name>
+        <group_photo>
+            <img src="../Images/ID/cover2.jpg" alt="Imagine Dragons"/>
+        </group_photo>
+    </cover>
+
+    <introduction>
+        <overview>
+            <p>
+                Imagine Dragons is an American pop rock band from Las Vegas, Nevada. Formed in 2009, Imagine Dragons first revealed their 
+                limitless passion and genre-bending sensibilities with a series of independently 
+                released EPs that quickly earned a grassroots following
+            </p>
+            <p>            
+                Over the last half-decade, Imagine Dragons have emerged as one of the biggest and most compelling rock bands in the world. 
+            </p>
+        </overview>
+        <group_data>
+            <country> Country: USA </country>
+            <activeyear> Active year: 2008-present </activeyear>
+            <musicalgenres>  Musical genres: Pop rock, electropop, pop, indie pop, arena rock, alternative rock </musicalgenres>
+            <instruments> Instrument(s) : Voice, Guitar, Bass, Drum </instruments>
+            <labels> Labels : Kidinakorner, Interscope </labels>
+        </group_data>
+        <current_members>
+            <member>
+                <member_photo>
+                    <img src="../Images/ID/Dan_Reynolds.jpg" alt="Dan Reynolds" />
+                </member_photo>
+                <name> Name: Dan Reynolds </name>
+                <birthday year="1987" month="7" day="14"/>
+                <positions> Positions: lead vocals, guitars, piano, keyboards, bass, drums, percussion </positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img src="../Images/ID/Sermon.jpg" alt="Wayne Sermon"/>
+                </member_photo>
+                <name> Name: Wayne Sermon </name>
+                <birthday year="1984" month="6" day="15"/>
+                <positions> Positions: guitars, backing vocals, mandolin, drums, percussion, piano, synthesizers</positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img src="../Images/ID/Ben_McKee.jpg" alt="Ben McKee" />
+                </member_photo>
+                <name> Name: Ben Mckee </name>
+                <birthday year="1985" month="4" day="7"/>
+                <positions> Positions: bass, piano, keyboards, synthesizers, backing vocals, guitars, drums, percussion</positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img src="../Images/ID/Daniel_Platzman.jpg" alt="Daniel Platzman" />
+                </member_photo>
+                <name> Name: Daniel Platzman </name>
+                <birthday year="1986" month="9" day="28"/>
+                <positions> Positions: drums, percussion, backing vocals, guitars, viola, keyboards </positions>
+            </member>
+        </current_members>
+    </introduction>
+    
+    <discography>
+        <albums>
+            <album_name>
+                Night Visions
+                <img src="../Images/ID/night-visions.jpg" alt="Night Visions"/>
+            </album_name>    
+            <album_name>
+                Smoke + Mirrors
+                <img src="../Images/ID/smoke+mirrors.png" alt="Smoke + Mirrors"/>
+            </album_name>
+            <album_name>
+                Evolve
+                <img src="../Images/ID/evolve.jpg" alt="Evolve"/>
+            </album_name>
+            <album_name>
+                Origins
+                <img src="../Images/ID/origins.jpg" alt="Origins"/>
+            </album_name>
+            <album_name>
+                Mercury - Act 1
+                <img src="../Images/ID/mercury.jpg" alt="Mercury - Act 1"/>
+            </album_name>
+        </albums>
+        <singles>        
+            <single_name>
+                Shots
+                <img src="../Images/ID/shots.jpg" alt="Shots"/>
+            </single_name>           
+            <single_name>
+                Thunder
+                <img src="../Images/ID/thunder.jpg" alt="Thunder"/>
+            </single_name>            
+            <single_name>
+                Next to me
+                <img src="../Images/ID/next-to-me.jpg" alt="Next to me"/>
+            </single_name>
+            <single_name>
+                Enemy
+                <img src="../Images/ID/enemy.jpg" alt="Enemy"/>
+            </single_name>                    
+        </singles>
+    </discography>
+</musical_band>
+

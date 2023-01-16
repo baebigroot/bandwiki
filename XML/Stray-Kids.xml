@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE musical_band SYSTEM "musical_band.dtd">
+
+<musical_band author="Rafidison Lovanomena" year="2022">
+    <cover>
+        <group_name> Stray Kids </group_name>
+        <group_photo>
+            <img  src="../Images/SKZ/skz-cov1.jpg" alt="Stray Kids" />
+        </group_photo>
+    </cover>
+
+    <introduction>
+        <overview>
+            <p>
+                "Step Out! Hello, We are Stray Kids" ― Stray Kids' introduction
+            </p>
+            <p>
+                Stray Kids is an eight-member boy group under JYP Entertainment.
+                Formed through the competition reality show of the same name and debuted on March 25, 2018,
+                with the mini album I Am Not.
+                The name of the group is named by the team members. The group name expresses their determination
+                to break the existing mold and go one step forward to be out of the ordinary.
+            </p>
+        </overview>
+        <logo>
+            <img src="../Images/SKZ/skz_logo.jpg" alt="SKZ Logo" height="260"/>
+        </logo>
+        <group_data>
+            <country> Country: South Korea </country>
+            <activeyear> Active year: 2018-present </activeyear>
+            <musicalgenres>  Musical genres: K-pop,K-hip-hop,K-rap,J-pop </musicalgenres>
+            <instruments> Instrument(s) : Voice </instruments>
+            <labels> Labels : JYP Entertainment, Sony Music Entertainment Japan </labels>
+        </group_data>
+        <current_members>
+            <member>
+                <member_photo>
+                    <img src="../Images/SKZ/Bang_Chan.jpg" alt="Bang Chan" />
+                </member_photo>
+                <name> Bang Chan </name>
+                <birthday year="1997" month="10" day="3"/>
+                <positions> Leader, Lead Vocalist, Lead Dancer, Sub-Rapper, Producer </positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img  src="../Images/SKZ/Lee_Know.jpeg" alt="Lee Know" />
+                </member_photo>
+                <name> Lee Know </name>
+                <birthday year="1998" month="10" day="25"/>
+                <positions> Main Dancer, Vocalist, Sub-Rapper </positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img  src="../Images/SKZ/Changbin.jpeg" alt="Changbin" />
+                </member_photo>
+                <name> Changbin </name>
+                <birthday year="1999" month="8" day="11"/>
+                <positions> Main Rapper, Sub-Vocalist, Producer </positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img  src="../Images/SKZ/Hyunjin.jpg" alt="Hyunjin" />
+                </member_photo>
+                <name> Hyunjin </name>
+                <birthday year="2000" month="3" day="20"/>
+                <positions> Main Dancer, Lead Rapper, Sub-Vocalist, Visual </positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img  src="../Images/SKZ/Han.jpeg" alt="Han" />
+                </member_photo>
+                <name> Han </name>
+                <birthday year="2000" month="9" day="14"/>
+                <positions> Main Rapper, Lead Vocalist, Producer </positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img  src="../Images/SKZ/Felix.jpg" alt="Felix" />
+                </member_photo>
+                <name> Felix </name>
+                <birthday year="2000" month="9" day="15"/>
+                <positions> Lead Dancer, Lead Rapper, Sub-Vocalist </positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img  src="../Images/SKZ/Seungmin.jpg" alt="Seungmin" />
+                </member_photo>
+                <name> Seungmin </name>
+                <birthday year="2000" month="9" day="22"/>
+                <positions> Main Vocalist </positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img src="../Images/SKZ/I.N.jpg" alt="I.N" />
+                </member_photo>
+                <name> I.N </name>
+                <birthday year="2001" month="2" day="8"/>
+                <positions> Vocalist, Maknae </positions>
+            </member>
+        </current_members>
+    </introduction>
+    
+    <discography>
+        <albums>
+            <album_name>
+                ODDINARY
+                <img src="../Images/SKZ/ODDINARY.jpg" alt="ODDINARY"/>
+            </album_name>
+            <album_name>
+                SKZ2021
+                <img src="../Images/SKZ/SKZ2021.jpg" alt="SKZ2021"/>
+            </album_name>    
+            <album_name>
+                Christmas EveL
+                <img src="../Images/SKZ/Christmas_EveL.jpg" alt="Christmas EveL"/>
+            </album_name>  
+            <album_name>
+                NOEASY
+                <img src="../Images/SKZ/NOEASY.jpg" alt="NOEASY"/>
+            </album_name>
+            <album_name>
+                ALL IN
+                <img src="../Images/SKZ/All_In.jpg" alt="ALL IN"/>
+            </album_name>
+            <album_name>
+                IN LIFE
+                <img src="../Images/SKZ/IN_Life.jpg" alt="IN LIFE"/>
+            </album_name>
+            <album_name>
+                GO LIVE
+                <img src="../Images/SKZ/Go_Live.jpg" alt="GO LIVE"/>
+            </album_name>
+            <album_name>
+                Cle:Levanter
+                <img src="../Images/SKZ/Cle_Levanter.jpg" alt="Cle:Levanter"/>
+            </album_name>
+            <album_name>
+                Cle 2:Yellow Wood
+                <img src="../Images/SKZ/Cle_2_yellow_wood.jpg" alt="Cle 2:Yellow Wood"/>
+            </album_name>
+            <album_name>
+                Cle 1:Miroh
+                <img src="../Images/SKZ/Cle_1_MIROH.jpg" alt="Cle 1:Miroh"/>
+            </album_name>
+            <album_name>
+                I Am You
+                <img src="../Images/SKZ/I_Am_You.jpg" alt="I Am You"/>
+            </album_name>
+            <album_name>
+                I Am Who
+                <img src="../Images/SKZ/I_am_Who.jpg" alt="I Am Who"/>
+            </album_name>
+            <album_name>
+                I Am Not
+                <img src="../Images/SKZ/I_Am_Not.jpg" alt="I Am Not"/>
+            </album_name>
+            <album_name>
+                Mixtape
+                <img src="../Images/SKZ/Mixtape.jpg" alt="Mixtape"/>
+            </album_name>
+        </albums>
+        <singles>
+            <single_name> 
+                Mixtape:Oh 
+                <img src="../Images/SKZ/Mixtape_oh.jpg" alt="Mixtape:Oh"/>
+            </single_name>
+            <single_name> 
+                TOP 
+                <img src="../Images/SKZ/TOP.jpg" alt="TOP"/>
+            </single_name>   
+            <single_name> 
+                Mixtape:On Track 
+                <img src="../Images/SKZ/Mixtape_On_Track.jpg" alt="Mixtape:On Track"/>
+            </single_name>
+            <single_name> 
+                Mixtape:Gone Days 
+                <img src="../Images/SKZ/Mixtape_Gone_Days.jpg" alt="Mixtape:Gone Days"/>
+            </single_name>
+            <single_name> 
+                Double Knot 
+                <img src="../Images/SKZ/Double_Knot.jpg" alt="Double Knot"/>
+            </single_name>
+            <single_name> 
+                Hellevator 
+                <img src="../Images/SKZ/Hellevator.jpg" alt="Hellevator"/>
+            </single_name>
+        </singles>
+    </discography>
+</musical_band>
+
