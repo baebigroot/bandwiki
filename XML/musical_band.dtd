@@ -1,0 +1,158 @@
+<!-- NGUYEN Kieu Nhung - RAFIDISON Lovanomena-->
+
+
+													<!--ENTITY-->
+<!ENTITY % monthval "(1|2|3|4|5|6|7|8|9|10|11|12)">
+<!ENTITY % dayval
+	 "(1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31)"> 
+<!ENTITY % year "CDATA"> 
+<!ENTITY % inline "img | a">
+<!ENTITY % datainline "(#PCDATA | %inline;)*">
+<!ENTITY % datainlineul "(#PCDATA | p | %inline; | ul)*">
+<!ENTITY % coreattrs
+	 "id       ID      #IMPLIED
+	  class    CDATA   #IMPLIED
+	  title    CDATA   #IMPLIED">
+
+<!ENTITY % URI "CDATA">
+<!-- a Uniform Resource Identifier, see [RFC2396] -->
+
+<!ENTITY % Length "CDATA">
+<!-- nn for pixels or nn% for percentage length -->
+
+<!ENTITY % Text "CDATA">
+<!-- used for titles etc. -->
+
+<!ELEMENT img EMPTY>
+<!ATTLIST img
+	%coreattrs;
+	src         %URI; #REQUIRED
+	alt         %Text; #REQUIRED
+	longdesc    %URI;          #IMPLIED
+	height      %Length;       #IMPLIED
+	width       %Length;       #IMPLIED
+	>
+
+<!ELEMENT a (#PCDATA)*>
+<!ATTLIST a
+	%coreattrs;
+  	href        %URI;          #IMPLIED
+>
+
+<!ELEMENT p %datainline;>
+<!ATTLIST p 
+	%coreattrs;>
+
+<!ELEMENT ul (li)+>
+<!ELEMENT li %datainlineul;>
+<!ATTLIST li
+	%coreattrs;
+	begin %year; #IMPLIED
+	end   %year; #IMPLIED
+	year  %year; #IMPLIED
+	>
+													<!--GENERAL STRUCTURE-->
+<!ELEMENT musical_band (cover, introduction, discography)>
+<!ATTLIST musical_band
+	%coreattrs;
+    author    	CDATA	#IMPLIED
+	year		%year;	#REQUIRED>
+
+													<!--COVER-->
+<!ELEMENT cover (group_name, group_photo)>
+<!ATTLIST cover
+	%coreattrs;>
+<!ELEMENT group_name %datainline;>
+<!ATTLIST group_name
+	%coreattrs;>
+<!ELEMENT group_photo (img+)>
+<!ATTLIST group_photo
+	%coreattrs;>	
+
+													<!--INTRODUCTION-->
+<!ELEMENT introduction (overview, logo?, group_data, current_members)>
+<!ATTLIST introduction
+	%coreattrs;>
+
+<!ELEMENT overview %datainlineul;>
+<!ATTLIST overview
+	%coreattrs;>
+
+<!ELEMENT logo (img+)>
+<!ATTLIST logo
+	%coreattrs;>
+	
+<!ELEMENT group_data (country,activeyear,musicalgenres,instruments,labels)>
+<!ATTLIST group_data
+	%coreattrs;>
+<!ELEMENT country %datainline;>	
+<!ATTLIST country
+	%coreattrs;>
+<!ELEMENT activeyear %datainline;>	
+<!ATTLIST activeyear
+	%coreattrs;>
+<!ELEMENT musicalgenres %datainline;>
+<!ATTLIST musicalgenres
+	%coreattrs;>
+<!ELEMENT instruments %datainline;>
+<!ATTLIST instruments 
+    %coreattrs;>
+<!ELEMENT labels %datainline;>
+<!ATTLIST labels 
+    %coreattrs;>  
+	
+<!ELEMENT current_members (member+)>
+<!ATTLIST current_members
+    %coreattrs;>
+<!ELEMENT member (member_photo,name,birthday,positions)>
+<!ATTLIST member
+	%coreattrs;>
+<!ELEMENT member_photo (img+)>
+<!ATTLIST member_photo
+	%coreattrs;>
+<!ELEMENT name %datainline;>
+<!ATTLIST name
+    %coreattrs;> 	
+<!ELEMENT birthday EMPTY>
+<!ATTLIST birthday 
+    %coreattrs;
+    year     %year;       #REQUIRED
+	month    %monthval;   #IMPLIED
+	day      %dayval;     #IMPLIED
+	>
+<!ELEMENT positions %datainline;>
+<!ATTLIST positions
+    %coreattrs;>
+
+	  
+
+													<!--DISCOGRAPHY-->
+	
+<!ELEMENT discography (albums+,singles+)>
+<!ATTLIST discography
+    %coreattrs;>		
+<!ELEMENT albums (album_name+)>
+<!ATTLIST albums
+	%coreattrs;>	  
+<!ELEMENT album_name %datainline;>
+<!ATTLIST album_name
+	%coreattrs;>	  
+<!ELEMENT singles (single_name+)>
+<!ATTLIST singles
+	%coreattrs;>	  
+<!ELEMENT single_name %datainline;>
+<!ATTLIST single_name
+	%coreattrs;>
+
+
+
+
+
+
+
+
+
+
+
+
+

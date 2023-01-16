@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE musical_band SYSTEM "musical_band.dtd">
+
+<musical_band author="Rafidison Lovanomena" year="2022">
+    <cover>
+        <group_name> Tomorrow X Together </group_name>
+        <group_photo>
+			<img  src="../Images/TXT/txt-cov1.jpg" alt="TXT" />
+        </group_photo>
+    </cover>
+
+    <introduction>
+        <overview>
+            <p>
+                ONE DREAM! Hello, We are TOMORROW X TOGETHER!" — TXT's Introduction 
+            </p>
+            <p>
+                TOMORROW X TOGETHER (read as Tomorrow by Together; commonly known as TXT)is a five-member boy group under Big Hit Music (formerly Big Hit Entertainment). The members don't have any official fixed positions, except for the leader. They debuted on March 4, 2019, with their first mini album The Dream Chapter: STAR at Mnet's 'Debut Celebration Show'. According to their website, the meaning behind "Tomorrow by Together" is five individuals who "come together under one dream in hopes of building a better tomorrow".
+            </p>
+        </overview>
+        <logo>
+			<img src="../Images/TXT/txt-logo.jpeg"  alt="Logo TXT"/>
+        </logo>
+        <group_data>
+            <country> Country: South Korea </country>
+            <activeyear> Active year: 2019-present </activeyear>
+            <musicalgenres>  Musical genres: K-pop, J-pop </musicalgenres>
+            <instruments> Instrument(s): Voice </instruments>
+            <labels> Labels: Big Hit Music, Hybe Corporation, Republic Records </labels>
+        </group_data>
+        <current_members>
+            <member>
+                <member_photo>
+					<img src="../Images/TXT/Yeonjun.jpg" alt="Yeonjun" />
+                </member_photo>
+                 <name> Yeonjun </name>
+                <birthday year="1999" month="9" day="13"/>
+                <positions> Rapper, Dancer, Vocalist </positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img src="../Images/TXT/Soobin.jpg" alt="Soobin" />
+                </member_photo>
+                <name> Soobin </name>
+                <birthday year="2000" month="12" day="5"/>
+                <positions> Leader, Vocalist, Rapper, Dancer </positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img src="../Images/TXT/Beomgyu.jpg" alt="Beomgyu"/>
+                </member_photo>
+                <name> Beomgyu </name>
+                <birthday year="2001" month="3" day="13"/>
+                <positions> Vocalist, Dancer, Rapper, Center, Visual </positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img src="../Images/TXT/Taehyun.jpg" alt="Taehyun"/>
+                </member_photo>
+                <name> Taehyun </name>
+                <birthday year="2002" month="2" day="5"/>
+                <positions> Vocalist, Rapper, Dancer </positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img src="../Images/TXT/Hueningkai.jpg" alt="Hueningkai"/>
+                </member_photo>
+                <name> Hueningkai </name>
+                <birthday year="2002" month="8" day="14"/>
+                <positions> Maknae, Vocalist, Rapper, Dancer, Visual </positions>
+            </member>
+        </current_members>
+    </introduction>
+    
+    <discography>
+        <albums>
+            <album_name>
+                Minisode 2: Thursday's Child
+                <img src="../Images/TXT/Minisode2-Thursday's_Child.jpg" alt="The Chaos Chapter-FIGHT OR ESCAPE"/>
+            </album_name>
+            <album_name>
+                The Chaos Chapter: FIGHT OR ESCAPE
+                <img src="../Images/TXT/The_Chaos_Chapter-FIGHT_OR_ESCAPE.jpg" alt="The Chaos Chapter-FIGHT OR ESCAPE"/>
+            </album_name>    
+            <album_name>
+                The Chaos Chapter: FREEZE
+                <img src="../Images/TXT/The_Chaos_Chapter-FREEZE.jpg" alt="The Chaos Chapter-FREEZE"/>
+            </album_name>
+            <album_name>
+                Minisode1 : Blue Hour
+                <img src="../Images/TXT/Minisode1-Blue_Hour.jpg" alt="Minisode 1-Blue Hour"/>
+            </album_name>
+            <album_name>
+                The Dream Chapter: ETERNITY
+                <img src="../Images/TXT/The_Dream_Chapter-ETERNITY.jpg" alt="The Dream Chapter-ETERNITY"/>
+            </album_name>
+            <album_name>
+                The Dream Chapter: MAGIC
+                <img src="../Images/TXT/The_Dream_Chapter-MAGIC.jpg" alt="The Dream Chapter-MAGIC"/>
+            </album_name>
+            <album_name>
+                The Dream Chapter: STAR
+                <img src="../Images/TXT/The_Dream_Chapter-STAR.jpg" alt="he Dream Chapter-STAR"/>
+            </album_name>
+        </albums>
+        <singles>
+            <single_name>
+                0X1=LOVESONG (I Know I Love You)feat.MOD SUN
+                <img src="../Images/TXT/0X1=LOVESONG.jpg" alt="0X1=LOVESONG (I Know I Love You)"/>
+                Drama(Japanese Ver.)
+                <img src="../Images/TXT/Drama.jpg" alt="Drama"/>
+            </single_name>            
+            <single_name>
+                MAGIC HOUR
+                <img src="../Images/TXT/Magic_Hour.jpg" alt="Magic Hour"/>
+            </single_name>           
+            <single_name>
+                Our Summer(Acoustic Mix)
+                <img src="../Images/TXT/Our_Summer.jpg" alt="Our Summer"/>
+            </single_name>
+            <single_name>
+                Cat &amp; Dog (Eng Ver.)
+                <img src="../Images/TXT/Cat_Dog.jpg" alt="Cat &amp; Dog"/>
+            </single_name>
+        </singles>
+    </discography>
+</musical_band>
+

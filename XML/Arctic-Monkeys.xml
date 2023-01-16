@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE musical_band SYSTEM "musical_band.dtd">
+
+<musical_band author="NGUYEN Nhung" year="2022">
+    <cover>
+        <group_name> Arctic Monkeys </group_name>
+        <group_photo>
+            <img src="../Images/AM/cover.jpg" alt="Arctic Monkeys"/>
+        </group_photo>
+    </cover>
+
+    <introduction>
+        <overview>
+            <p>
+                Arctic Monkeys are an English rock band formed in Sheffield in 2002. They were heralded as one of the first bands to come to public attention via the Internet, with commentators suggesting they represented the possibility of a change in the way in which new bands are promoted and marketed. Their debut album, "Whatever People Say I Am, That's What I'm Not" (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums.
+            </p>
+        </overview>
+        <group_data>
+            <country> Country: England </country>
+            <activeyear> Active year: 2002-present </activeyear>
+            <musicalgenres>  Musical genres: Indie rock, garage rock, post-punk revival, psychedelic rock, alternative rock, post-Britpop </musicalgenres>
+            <instruments> Instrument(s) : Voice, Guitar, Bass, Keyboards, Drums </instruments>
+            <labels> Labels : Domino </labels>
+        </group_data>
+        <current_members>
+            <member>
+                <member_photo>
+                    <img src="../Images/AM/Alex_Turner.jpg" alt="Alex Turner" />
+                </member_photo>
+                <name> Name: Alex Turner</name>
+                <birthday year="1986" month="1" day="6"/>
+                <positions> Positions: lead vocals, guitar, keyboards </positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img src="../Images/AM/Jamie_Cook.jpg" alt="Jamie Cook" />
+                </member_photo>
+                <name> Name: Jamie Cook </name>
+                <birthday year="1985" month="7" day="8"/>
+                <positions> Positions: guitar, keyboards </positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img src="../Images/AM/Matt.jpg" alt="Matt Helders" />
+                </member_photo>
+                <name> Name: Matt Helders </name>
+                <birthday year="1986" month="5" day="7"/>
+                <positions> Positions: drums, backing vocals </positions>
+            </member>
+            <member>
+                <member_photo>
+                    <img src="../Images/AM/Nick_OMalley.jpg" alt="Nick O'Malley" />
+                </member_photo>
+                <name> Name: Nick O'Malley </name>
+                <birthday year="1985" month="7" day="5"/>
+                <positions> Positions: bass guitar, backing vocals </positions>
+            </member>
+        </current_members>
+    </introduction>
+    
+    <discography>
+        <albums>
+            <album_name>
+                Whatever People Say I Am, That's What I'm Not
+                <img src="../Images/AM/whatever.jpg" alt="Whatever People Say I Am, That's What I'm Not"/>
+            </album_name>    
+            <album_name>
+                Favourite Worst Nightmare
+                <img src="../Images/AM/favourite.jpg" alt="Favourite Worst Nightmare"/>
+            </album_name>
+            <album_name>
+                Humbug 
+                <img src="../Images/AM/humbug.jpg" alt="Humbug"/>
+            </album_name>
+            <album_name>
+                Suck It and See
+                <img src="../Images/AM/suck.jpg" alt="Suck It and See"/>
+            </album_name>
+            <album_name>
+                AM
+                <img src="../Images/AM/am.jpg" alt="AM"/>
+            </album_name>
+            <album_name>
+                Tranquility Base Hotel and Casino 
+                <img src="../Images/AM/tranquility.jpg" alt="Tranquility Base Hotel and Casino "/>
+            </album_name>                
+        </albums>
+        <singles>        
+            <single_name>
+                505
+                <img src="../Images/AM/505.jpg" alt="505"/>
+            </single_name>           
+            <single_name>
+                Do I Wanna Know
+                <img src="../Images/AM/do-i-wanna-know.jpg" alt="Do I Wanna Know"/>
+            </single_name>            
+            <single_name>
+                Knee Socks
+                <img src="../Images/AM/knee-socks.jpg" alt="Knee Socks"/>
+            </single_name>
+            <single_name>
+                Fluorescent Adolescent
+                <img src="../Images/AM/fluorescent.jpg" alt="Fluorescent Adolescent"/>
+            </single_name>                    
+        </singles>
+    </discography>
+</musical_band>
+

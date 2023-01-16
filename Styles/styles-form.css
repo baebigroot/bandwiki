@@ -1,0 +1,108 @@
+/* Nhung NGUYEN - Lovanomena RAFIDISON */
+
+/***********************************/
+/* Style Formulaire Nouvelle Fiche */
+/***********************************/
+
+body{
+    background-image: url(../Images/Others/cov2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+}
+
+h1{
+    text-align: center;
+    font-family: cursive;
+    color: aliceblue;
+    -webkit-text-stroke: 2px #212121;
+}
+
+fieldset{
+    margin: 20px auto;
+    width: 60%;
+}
+
+legend{
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    border: solid 1px black ;
+    background-color: whitesmoke;
+    width: 100%;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+div p {
+    text-align: left; 
+}
+
+div p button{
+    margin: 0 10%;
+}
+
+ul li{
+    list-style: none;
+    text-align: left;
+}
+
+h1 + p{
+    font-size: 20px;
+}
+button{
+   
+    font-size: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 80%;
+    height: 40px;
+    background-color: #fff;
+    margin: auto;
+}
+
+input,textarea{
+    outline: none;
+    border: none;
+    border: 2px solid #e6e6e6;
+    color: #666;
+    padding: 10px;
+}
+
+fieldset:first-child{
+    background-color: lavender ;
+}
+
+fieldset:nth-child(2){
+    background-color: lightcyan;
+}
+
+fieldset:nth-child(3){
+    background-color: #f8d5db;
+}
+
+fieldset:nth-child(4){
+    background-color: lemonchiffon;
+}
+
+fieldset:nth-child(5){
+    background-color: #bffabf;
+}
+
+fieldset:last-child{
+    background-color: lightseagreen;
+}
+
+.required{
+    color: crimson;
+}
+
+.error{
+    color: crimson;
+    background-color: #FFCABA;
+    font-size: 14px;
+}

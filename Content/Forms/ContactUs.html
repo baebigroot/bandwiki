@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>Formulaire Contact Us/ Guestbook</title>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Lovanomena RAFIDISON"/>
+        <link rel="stylesheet" href="../../Styles/contact-styles.css"/>
+        <script src="../../Javascript/contact.js"></script>
+    </head>
+    <body onsubmit="return validForm()">
+        <div class="container">
+            <div class="wrapper">
+                <div class="contact">
+                    <a href="../../index.xhtml" title="Back Home"> <img src="../../Images/Others/Black_logo.png" alt="logo" height="40" /></a>
+                    <div class="t-center">
+                        <span class="text">Thank you for visiting our webside <br/> - Nh Ng &amp; Ln Rs </span>
+                    </div>
+                </div>
+                <form name="myForm" action="http://voca2.univ-poitiers.fr/~subrenat/cours_web/traitement.php "
+            method="post" class="form">
+                    <h1>Contact Us/ Guestbook</h1>
+                    <div class="note">
+                        <em>Required fields are marked with  <span class="required">*</span></em>
+                    </div>
+                    <label for="first-name">Enter your name <span class="required"> * </span></label>
+                    <div class="wrap name">
+                        <input id="first-name" name="first-name" type="text" value="Your First Name"/>
+                        <span class="error" id="errorfstname"></span>
+                    </div>
+                    <div class="wrap name">
+                        <input name="last-name" type="text" value="Your Last Name"/>
+                        <span class="error" id="errorlstname"></span>
+                    </div>
+                    <label for="email">Enter your email <span class="required"> * </span></label>
+                    <div class="wrap">
+                        <input id="email" name="email" type="text" value="someone@example.com"/>
+                        <span class="error" id="erroremail"></span>
+                    </div>
+                    <label for="subject">Subject <span class="required"> * </span></label>
+                    <div class="wrap">
+                        <select id="subject" name="subject">
+                            <option value="" selected="selected" disabled>Please Select</option>
+                            <option value="AM"> Arctic Monkeys </option>
+                            <option value="ID"> Imagine Dragons </option>
+                            <option value="SKZ"> Stray Kids </option>
+                            <option value="TXT"> Tomorrow X Together </option>
+                            <option value="other"> Other </option>
+                        </select>
+                        <span class="error" id="errorselect"></span>
+                    </div>
+                    <label for = "message">Message <span class="required"> * </span></label>
+                        <textarea id ="message" name ="message" cols="40" rows="10" >Write your message here ...</textarea>
+                        <span class="error" id="errormsg"></span>
+                    <div class="btn">
+                        <button type="submit"> SEND MESSAGE </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

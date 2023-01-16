@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  <head>
+    <title>Formulaire creation nouvelle fiche </title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="author" content="Nhung NGUYEN"/>
+    <script src="../../Javascript/formulaire.js" defer ></script>
+    <link rel="stylesheet" href="../../Styles/styles-form.css"/>   
+  </head>
+  <body onsubmit="return validForm()">
+      <div class="head">
+        <a href="../../index.xhtml" title="Back Home"> <img src="../../Images/Others/Black_logo.png" alt="logo" height="40" /></a>
+        <h1>Want to see your favorite bands/artists featured on our website ?</h1>
+      </div>
+      <div class="note">
+        <em>Required fields are marked with  <span class="required">*</span></em>
+    </div>
+      <form name="myForm" action="http://voca2.univ-poitiers.fr/~subrenat/cours_web/traitement.php" method="post">
+      <fieldset>
+        <legend>Your identity</legend>
+          <div>
+              <div>
+                <p>
+                  <label for="last-name">Last Name <span class="required"> * </span>: </label>
+                  <input id="last-name" name="last-name" type="text" value="Your last name" size="30"/>
+                  <span class="error" id="errorlstname"></span>
+                </p>
+
+                <p>
+                  <label for="first-name">First Name <span class="required"> * </span>: </label>
+                  <input id="first-name" name="first-name" type="text" value="Your first name" size="30"/>
+                  <span class="error" id="errorfstname"></span>
+                </p>
+
+                <p>
+                  <label for="email">Email <span class="required"> * </span>: </label>
+                  <input id="email" name="email" type="text" value="example@gmail.com" size="30"/>
+                  <span class="error" id="erroremail"></span>
+                </p>
+              </div>
+          </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>General Information</legend>
+          <div>
+              <div>
+                    <p>
+                      <label for="name"> Band/Artist Name <span class="required"> * </span>: </label>
+                      <input id="name" name="name" type="text" value="Enter the band/artist name" size="30"/>
+                      <span class="error" id="errorbandName"></span>
+                    </p>
+                    
+
+                    <p>
+                      <label for="overview">Overview : </label><br/>
+                      <textarea id="overview" name="overview" rows="10" cols="60" >Say something about this band/artist </textarea>
+                    </p>
+
+                    <p><em>Group/Artist Data</em></p>
+
+                    <p>
+                      <label for="logo">Logo : </label>
+                      <input type="file" id="logo" name="logo" accept="image/png, image/jpeg">
+                    </p>
+                    <p>
+                      <label for="country">Country <span class="required"> * </span>: </label>
+                      <input id="country" name="country" type="text" value="Enter the contry name" size="30"/>
+                      <span class="error" id="errorcountry"></span>
+                    </p>
+
+                    <p>
+                      <label for="active-year">Active year <span class="required"> * </span>: </label>
+                      <input id="active-year" name="active-year" type="text" value="" size="10"/>
+                      <span class="error" id="erroryear"></span>
+                    </p>
+
+                    <p>
+                      <label for="genre">Musical genre <span class="required"> * </span>: </label>
+                      <input id="genre" name="genre" type="text" value=" ex: pop, rock, ..." size="30"/>
+                      <span class="error" id="errorgenre"></span>
+                    </p>
+
+
+
+                      <p>Instrument(s) : </p>
+                  
+                        <ul>
+                          <li>
+                            <input name="instrument[]" type="checkbox" value="voice"/>
+                            <label>Voice</label>
+                          </li>
+                          <li>
+                            <input name="instrument[]" type="checkbox" value="guitar"/>
+                            <label>Guitar</label>
+                          </li>
+                          <li><input name="instrument[]" type="checkbox" value="bass"/>
+                            <label>Bass</label>
+                          </li>
+                          <li>
+                            <input name="instrument[]" type="checkbox" value="drum"/>
+                            <label>Drum</label>
+                          </li>
+                          <li>
+                            <input name="instrument[]" type="checkbox" value="keyboards"/>
+                            <label>Keyboards</label>
+                          </li>
+                           <li>
+                            <label for="instrument">Others : </label>
+                            <input id="instrument" name="instrument[]" type="text" value="" />
+                          </li>           
+                        </ul>
+                  <p>
+                    <label for="label">Label(s) : </label>
+                    <input id="label" name="label" type="text" value="Enter the Label(s)" size="30"/>
+                  </p>
+                  </div>
+              </div>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Members</legend>
+        <div id="add-more-member">
+          <div class="anElement">
+            <p>
+              <label for="member-photo">Photo : </label>
+              <input type="file" id="member-photo" name="member-photo[]" accept="image/png, image/jpeg">
+            </p>
+  
+            <p>
+              <label for="member-name">Name <span class="required"> * </span>: </label>
+              <input id="member-name" name="member-name[]" type="text" size="30"/>
+              <span class="error" id="errormemberName"></span>
+            </p>
+  
+            <p>
+              <label for="birthday">Birthday : </label>
+              <input id="birthday" name="birthday[]" type="date"/>
+            </p>
+  
+            <p>
+              <label for="position">Position(s) <span class="required"> * </span>: </label>
+              <input id="position" name="position[]" type="text" size="30"/>
+              <span class="error" id="errorposition"></span>
+            </p>
+  
+            <p>
+              <button type="button" onclick="duplicateMember()">Add more member(s)</button>
+            </p>     
+          </div>
+        </div>
+      </fieldset>
+
+
+
+      <fieldset>
+        <legend>Discography</legend>
+        <div id="add-more-album">
+          <div class="anElement">
+            <p>
+              <label for="album-photo">Album photo: </label>
+              <input type="file" id="album-photo" name="album-photo[]" accept="image/png, image/jpeg">
+            </p>
+            <p>
+              <label for="album-name">Album name <span class="required"> * </span>: </label>
+              <input id="album-name" name="album-name[]" type="text" size="30"/>
+              <span class="error" id="erroralbumName"></span>
+            </p>
+            <p>
+              <label for="album-link">Youtube link to album : </label>
+              <input id="album-link" name="album-links[]" type="url" size="30"/>
+            </p>
+            <p>
+              <button type="button" onclick="duplicateAlbum()">Add more album(s)</button>
+            </p>
+          </div>
+        </div>
+
+        <div id="add-more-single">
+          <div class="anElement">
+            <p>
+              <label for="single-photo">Single photo: </label>
+              <input type="file" id="single-photo" name="single-photo[]" accept="image/png, image/jpeg">
+            </p>
+            <p>
+              <label for="single-name">Single name <span class="required"> * </span>: </label>
+              <input id="single-name" name="single-name[]" type="text" size="30"/>
+              <span class="error" id="errorsingleName"></span>
+            </p>
+            <p>
+              <label for="single-link">Youtube link to single : </label>
+              <input id="single-link" name="single-link[]" type="url" size="30"/>
+            </p>
+      
+            <p>
+              <button type="button" onclick="duplicateSingle()">Add more single(s)</button>
+            </p>
+          </div>
+        </div>          
+    </fieldset>
+    
+    <fieldset>
+        <legend>References</legend>
+        <div id="add-more-link">
+            <div class="anElement">
+                <p>
+                  <label for="link"> Link : </label>
+                  <input id="link" name="links[]" type="url" size="30"/>
+                </p>
+                <p>
+                  <button type="button" onclick="duplicateLink()">Add more link(s)</button>
+                </p>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Form Management</legend>
+
+      <div>
+        <button type="submit"> Submit </button>
+      </div>
+
+      </fieldset>
+    </form>
+
+
+    <hr/>
+
+
+  </body>
+
+</html>

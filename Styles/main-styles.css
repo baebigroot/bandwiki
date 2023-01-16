@@ -1,0 +1,105 @@
+/* Nhung NGUYEN - Lovanomena RAFIDISON */
+
+/***************/
+/* Main-Styles */ 
+/***************/
+
+
+/***********/
+/* GENERAL */ 
+/***********/
+
+/* selection des elements de section de body */
+
+body {
+    background-color: #e2ecf0;
+       
+}
+
+.wrapper, .ref, .comment {
+	background-color: whitesmoke;
+}
+
+h1:first-letter,.letter{
+     color: #00cdd0;
+}
+
+a {
+    color : black;  
+}
+
+a:hover{
+    color: purple;   
+}
+
+/* Bouton deroulant et bouton de menu au survol et focus  */
+.dropbtn:hover, .dropbtn:focus, .btn:hover {
+    background-color: #A8E7FF;
+}
+
+nav li a:hover {
+    box-shadow: inset 5em 2em paleturquoise;
+    padding: 2px;
+    color: dimgrey;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #900C3F;
+}
+
+/***********/
+/*  INDEX  */ 
+/***********/
+
+section {
+    background-color: #e5e5e5;
+    box-shadow: -3px -3px 5px rgba(0,0,0,.4);
+
+}
+
+section a{
+    -webkit-text-stroke: 2px #212121;
+}
+
+section a:hover{
+    -webkit-text-stroke: 3px #0088a9;
+}
+
+
+.button {
+	background-color: aliceblue;
+}
+
+.button:hover {
+    background-color: rgba(140, 61, 179, 0.3);
+    color: darkblue;
+    text-decoration: none;
+}
+
+/**************/
+/* COLLECTION */
+/**************/
+
+.cell:nth-child(odd),table.mb{
+    background-color: #F2E2BF;
+}
+
+#members, #disc, #refs, #coms, nav{
+	background-color: cadetblue ; 
+}
+
+#albums,#singles{
+	background-color: paleturquoise;
+}
+
+table:hover.mb 
+{
+    outline: 8px ridge rgba(123, 183, 255, 0.8);
+}
+
+.form_style {
+	 background-color: #addace;
+}
+
+

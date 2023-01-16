@@ -1,0 +1,647 @@
+/* Nhung NGUYEN - Lovanomena RAFIDISON */
+
+/***********/
+/* GENERAL */ 
+/***********/
+
+/* selection de tout les elements */
+
+*,*:before,*:after {
+    box-sizing:inherit;
+    margin:0; 
+    padding:0; 
+    border:0 none; 
+}
+
+html {
+	background: #fff;
+	box-sizing:border-box;
+	font-family: 'Vollkorn', sans-serif;
+	color: #000;
+    width: 100%;
+}
+
+/* selection des elements de section de body */
+
+body {
+    font-family: rubik,helvetica,arial,sans-serif;   
+}
+
+/* selection des elements de class container */
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+/* selection des elements de class wrapper */
+
+.wrapper {
+    width:100%;
+    display:flex;
+    flex-wrap : wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+h1,h2,h3,h4,ul,a,p,td,.name,.value,.note{
+    text-align:center;
+}
+
+h1,
+h2 {
+    margin: auto 0 ;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    word-spacing: .5rem;
+}
+
+.letter,.spe_letter {
+     font-size: 200%;
+    -webkit-text-stroke: 2px white ;
+}
+
+
+#title{
+    font-size : 2.09em;
+}
+
+p {
+    width: 100%;
+    font-family: cursive;
+    font-size: 100%;
+}
+
+/* selection des liens*/
+
+a {
+    text-decoration: none;
+    transition: color .3s;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Apparence au survol des liens */
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*selection des attributs target egal a _blank des liens pour ajouter du contenu après */
+
+a[target="_blank"]:after {
+    content: '⤴️';
+}
+
+ul, button {
+    list-style: none;
+}
+
+/* bouton pour remonter tout en haut de la page  */
+
+#scroll_to_top {
+    position: fixed;
+    bottom: 30px;
+    right: 1px;
+}
+
+#scroll_to_top img {
+    width: 25px;
+    border-radius: 3em;
+}
+
+/* changement de la barre de defilement*/
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2em;
+    border: 2px solid #fafafa;
+}
+
+/****************/
+/* HEADER | NAV */
+/****************/
+
+header {
+    margin-top: -4px;
+    align-content: center;
+}
+
+nav{
+    width: 100%;
+    margin-left: auto;
+    box-shadow: 0 10px 40px rgba(159, 172, 187, .8);
+    padding: 5px;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav li a:hover {
+    text-decoration: none;
+}
+
+.logo1{
+     width: 200px;
+    height : 60px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+
+.tools{
+    display: inline-flex;
+    justify-content: flex-start;
+    margin: 5px; 
+}
+
+.btn{
+    border: 1px solid black;
+    text-align: center;
+    padding: 4px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* Bouton deroulant */
+.dropbtn {
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+}
+
+
+/* La div necessaire pour positionner le contenu de la liste deroulante */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+/* Contenu de la liste deroulant (masque par defaut) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    left: -10px;
+    margin: 5px auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+    z-index: 1; 
+}
+
+/* Liens dans la liste deroulante */
+.dropdown-content a {
+    color: navy;
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Change la couleur des liens dans la liste deroulante au survol */
+.dropdown-content a:hover {
+    color: palevioletred;
+    background-color: #f1f1f1;
+    border-bottom: 2px solid gold;
+    text-decoration-line: underline;
+}
+
+/* Affiche le menu deroulant */
+.show {
+    display:block;
+}
+
+
+/***********/
+/*  INDEX  */ 
+/***********/
+
+body > #page{
+    display: flex;
+    flex-wrap: wrap;
+    margin: inherit;
+}
+
+figure {
+    width: calc( 50% + 1px);
+    height: 100vh;
+    margin: 0 auto 10vh 0;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+section {
+    width: calc(50%);
+    height: 100vh;
+    margin: 0 0 10vh auto;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    padding: 2vmin;
+}
+
+
+figure:nth-of-type(1),section:nth-of-type(1){
+    margin: 0 0 10vh 0;
+    width: 50%;
+        }
+
+figure:last-of-type,
+section:last-of-type {
+    margin-bottom: 0;
+}
+
+figure img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100px;
+}
+
+
+section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: .6rem;
+}
+
+section a {
+    color: transparent;
+    -webkit-text-stroke: 2px #212121;
+    text-decoration: none;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+section a:hover {
+    color: transparent;
+     -webkit-text-stroke: 2px #aaa;
+    box-shadow: 0 0 5px 5px white ;
+    text-decoration: none;   
+}
+
+.button {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'Comic Neue', cursive;
+    font-size: 75%;
+    letter-spacing: 3px;
+    -webkit-text-stroke: 2px transparent;
+    color: darkblue;
+    border-radius: .8em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button img{
+    margin-right: 5px;
+}
+
+/* Apparence au survol des elements de la selection button */
+
+.button:hover {
+    -webkit-text-stroke: 1px ;
+}
+
+
+/**************/
+/* COLLECTION */
+/**************/
+
+/**************/
+/*INTRODUCTION*/
+/**************/
+
+/* selection des elements de class content */
+
+.content {
+    position: relative;
+    text-align: center;
+    padding: 5px;
+    overflow: hidden;
+}
+
+/* selection des images de class content */
+
+.content img {
+    width: 100%;
+    height : 100%;
+}
+
+/* selection des elements de class text_center */
+
+.text_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: -30%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    border : 1px solid;
+    background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+    font-size: 95%;
+}
+
+.spe_letter {
+     color:  black;
+}
+
+
+/************/
+/*GROUP DATA*/
+/************/
+
+/* selection de l'element avec l'id group_data */
+
+#group_data {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+/*selection des elements de class logo*/
+
+.logo {
+    padding: 5px;
+}
+
+/* selection des elements de class name et value */
+
+.name, .value {
+    display: inline-block;
+    padding: 10px;
+}
+
+.name {
+    white-space: nowrap;
+}
+
+.value {
+   text-align: right; 
+}
+
+/* selection des elements de class data */
+
+.data {
+    margin: auto 5px;
+}
+
+
+/*selection des elements de class cell*/
+
+.cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin: 2px;
+}
+
+
+/***********/
+/* MEMBERS */
+/***********/
+
+#members, #disc, #refs, #coms {
+    margin: 10px auto;
+    border: 2px solid;
+    width: 95%;
+    padding: 5px;
+}
+
+/* selection des elements de la selection table */
+ 
+table.mb {
+    padding: 10px 20px;
+    border: 2px solid grey;
+    border-radius: 2rem;
+}
+
+/* Apparence au survol des elements de la selection table */
+
+table:hover.mb {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+    border-radius: 2rem;
+}
+
+/*selection des elements de class member*/
+
+.member {
+    margin: 20px;
+    max-width: 100%;
+}
+
+/* selection des donnes du tableau de class member*/
+
+.member table tr td {
+    font-size: 80%;
+    
+}
+
+/* selection des images de la class member */
+
+.member img {
+    border-radius: 2rem;
+    height: 380px;
+    width: 380px;
+}
+
+
+/*************/
+/*DISCOGRAPHY*/
+/*************/
+
+#albums,#singles {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border: 2px solid;
+    border-radius: 2em;
+    width: 90%;
+    padding: 5px;
+}
+
+/*selection des elements de class tile*/
+
+.tile {
+    width:300px;
+    height:300px;
+    margin: 3px 11px;
+    border: 2px solid #fff;
+    background-size: cover;
+    background-color: azure;
+    position: relative;
+    transition: all 0.5s ease-out; /* temps d'apparition des elements */
+    box-shadow: 10px 10px 3px rgba(160, 172, 190,0.8);
+    overflow:hidden; /* debordement cacher*/
+    font-family:'Roboto',cursive;
+}
+
+/* selection des images de la class tile */
+
+.tile img {
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition: all 0.6s ease-out;
+}
+
+/* selection des titres de niveau 4 de la class tile */
+
+.tile h4 {
+    font-size: 18px;
+    padding: 10%;
+    margin: 10%;
+    color: darkcyan;
+}
+
+/* Apparence au survol des elements de la class tile */
+.tile:hover {
+    background-color: lavender; 
+    box-shadow: 15px 15px 5px rgba(160, 172, 190,0.8);
+    transform:scale(1.08); /* l'element augmente avec le coeff au survol de la souris */
+}
+
+/* Apparence au survol de l'image de la class tile */
+
+.tile:hover img {
+    opacity: 0.2; /* l'image est moins presente lors du survol de la souris */
+}
+
+
+/************************/
+/* REFERENCES | COMMENT */
+/************************/
+
+/* selection des elements de class ref et de section footer*/
+.ref, .comment {
+    padding: 10px 2%;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    width: auto;
+    border-top: 1px solid #bfc4c6;
+}
+
+.ref ol {
+    margin: 0 4%;
+    padding: 0 10px 10px;
+}
+
+ol li {
+    margin: 6px;
+}
+
+.comment {
+    padding-bottom: 5px;
+}
+
+.form_style {
+    margin:20px auto;
+    max-width: 100%;
+    width: 60%;
+    height:100%;
+    padding: 10px 12px;
+    font-family: "Lucida Grande", sans-serif;    
+}
+
+.comment td {
+    display: block;
+    margin: 7px auto;
+    max-width: 100%;
+    width: 80%;
+}
+
+.form_style label {
+    margin:0 0 3px 0;
+    padding:0px;
+    display:inline-block;
+}
+
+.required {
+    color: crimson;
+}
+
+.note {
+    float: left;
+    font-style: italic;
+    font-size: 12px;
+}
+
+#yes, #no {
+    margin: 5px;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button[type=submit],button[type=reset] {
+    background-color: purple;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+button[type=submit]:hover,button[type=reset]:hover {
+    color: black;
+    background-color: lavender;
+    border:2px solid purple;
+    transition: all 0.5s ease;
+  
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    outline: 2px ridge rgba(123, 183, 255, 0.8);
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, 0.3);
+}
+
+.error {
+    color: crimson;
+    background-color: #FFCABA;
+    font-size: 12px;    
+}
+
+input,textarea {
+    color: #666;
+    padding: 10px 25px;
+}
+
+
+textarea {
+    height: 120px;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+.long {
+    height: 20px;
+    width: 60%;
+}
+
